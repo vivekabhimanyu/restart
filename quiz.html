@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>AWS Certified Cloud Practitioner Quiz</h1>
+        
+        <!-- Timer and Score -->
+        <div id="timer-score-container">
+            <div id="time-left">10:00</div>
+            <div id="score">Score: 0</div>
+        </div>
+        
+        <!-- Question and Options -->
+        <div id="question-number"></div>
+        <div id="question"></div>
+        <div id="options"></div>
+
+        <!-- Navigation Buttons -->
+        <div class="buttons">
+            <button id="previous-button" class="nav-button" disabled>Previous</button>
+            <button id="next-button" class="nav-button">Next</button>
+            <button id="submit-button" class="submit-button" style="display:none;">Submit</button>
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination">
+            <button id="prev-set" disabled>Previous Set</button>
+            <span id="set-indicator">Set 1 of 12</span>
+            <button id="next-set">Next Set</button>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Quiz Completed!</h2>
+            <p id="popup-message">Your final score is: 0</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

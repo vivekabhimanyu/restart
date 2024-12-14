@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>re /Start</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="test.js"></script>
+  <link rel="stylesheet" href="test.css"></head>
+  <body>
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleSidebar()">&#9776;
+    </div>
+    <div class="logo-container">
+      <a href="#" target="_blank">
+       <img src="restart.png" alt="Logo" style="height: 50px;">
+     </a></div>
+</nav>
+  
+
+  <div class="sidebars-container">
+    <div class="sidebar" id="sidebar">
+      <div class="contents-block-wrapper">
+        <div class="contents-block"></div>
+        <button class="close-btn" onclick="closeSidebar()">&#10005;</button>
+      </div>
+      <ul>
+        <li onclick="toggleDropdown('topicsDropdown')">TOPICS</li>
+        <li onclick="toggleDropdown('quizDropdown')">QUIZ</li>
+        <li onclick="toggleDropdown('labsDropdown')">LABS</li>
+        <li onclick="toggleDropdown('AccessDropdown')">Access</li>
+      </ul>
+    </div>
+    <ul class="dropdown" id="AccessDropdown">
+     
+      <li><a href="access.html" target="_blank"> Access Form </a></li>
+
+    </ul>
+    <ul class="dropdown" id="topicsDropdown">
+      <li onclick="showSubmenu('topicsSubmenu1')">CLOUD FOUNDATIONS</li>
+      <li onclick="showSubmenu('topicsSubmenu2')">LINUX</li>
+      <li onclick="showSubmenu('topicsSubmenu3')">NETWORKING</li>
+      <li onclick="showSubmenu('topicsSubmenu4')">SECURITY</li>
+      <li onclick="showSubmenu('topicsSubmenu5')">PYTHON</li>
+      <li onclick="showSubmenu('topicsSubmenu6')">DATABASES</li>
+      <li onclick="showSubmenu('topicsSubmenu7')">AWS ARCHITECTURE</li>
+      <li onclick="showSubmenu('topicsSubmenu8')">SYSTEM OPERATIONS</li>
+      <li onclick="showSubmenu('topicsSubmenu9')">TOOLING AND AUTOMATION</li>
+      <li onclick="showSubmenu('topicsSubmenu10')">SERVERS</li>
+      <li onclick="showSubmenu('topicsSubmenu11')">SCALING AND NAME RESOLUTION</li>
+      <li onclick="showSubmenu('topicsSubmenu12')">SERVERLESS AND CONTAINERS</li>
+      <li onclick="showSubmenu('topicsSubmenu13')">AWS DATABASE SERVICES</li>
+      <li onclick="showSubmenu('topicsSubmenu14')">AWS NETWORKING SERVICES</li>
+      <li onclick="showSubmenu('topicsSubmenu15')">STORAGE AND ARCHIVING</li>
+      <li onclick="showSubmenu('topicsSubmenu16')">JUMPSTART ON AWS</li>
+      <li onclick="showSubmenu('topicsSubmenu17')">EXAM PREPARATION</li>
+      <li onclick="showSubmenu('topicsSubmenu18')">POST COHORT SURVEY</li>
+    </ul>
+
+
+  
+    <ul class="submenu" id="topicsSubmenu1">
+      <li><a href="https://drive.google.com/file/d/1zZTOkrgch9YBUM_hhpdjstwia1I4Z737/preview" target="_blank">Intro to Computing</a></li>
+      <li><a href="https://drive.google.com/file/d/1C3d1RIGGKA2xXIi8rehnaQcOusFt62By/preview" target="_blank">Basic Computing Concepts</a></li>
+      <li><a href="https://drive.google.com/file/d/1DgF03ZtSzesva-P4-SZxi6ooxpxBxlZv/preview" target="_blank">Development Team Roles</a></li>
+      <li><a href="https://drive.google.com/file/d/1jpFCZaUhs79KdlcVcummOayFR68waIaF/preview" target="_blank">What is Cloud Computing</a></li>
+      <li><a href="https://drive.google.com/file/d/1Q_6qjaejQ1kb6UmS1S4Bw2VaCE6KEE46/preview" target="_blank">Advantages of Cloud Computing</a></li>
+      <li><a href="https://drive.google.com/file/d/1K8vFuino5pYrPxBxC71WG6p8YE9Ewf2R/preview" target="_blank">What is AWS</a></li>
+      <li><a href="https://drive.google.com/file/d/1-CvONM7o5U5DN1s9QJieyZEJ7swi1ifd/preview" target="_blank">AWS Pricing</a></li>
+      <li><a href="https://drive.google.com/file/d/1WGXj5rjylbQxh-KfEJtZ5dPPnJUqLF8h/preview" target="_blank">AWS Infrastructure</a></li>
+      <li><a href="https://drive.google.com/file/d/1udjPR3jAL5WOwIUaXgC0tlzRVoGT_Z8F/preview" target="_blank">AWS Service and Categories</a></li>
+      <li><a href="https://drive.google.com/file/d/13xUHNIjYIoDm6WXGfWrK23mxYNhFXbSo/preview" target="_blank">AWS Shared Responsibility Model</a></li>
+      <li><a href="https://drive.google.com/file/d/1HBV1hQyEDpjF-kQXNZiLW3TjvfNXvauX/preview" target="_blank">AWS S3</a></li>
+      <li><a href="https://drive.google.com/file/d/1lS-5x5zDYSbnEnwx3fMmXkwu8Cq8nmPX/preview" target="_blank">AWS EC2</a></li>
+    </ul>
+
+
+    <ul class="submenu" id="topicsSubmenu2">
+      <li><a href="https://drive.google.com/file/d/176TNvaGK-6KgQ1Cb3yrYbfDpq61tLqSs/preview" target="_blank">Introduction to Linux</a></li>
+      <li><a href="https://drive.google.com/file/d/1eEn5aZ4KNgTbHVYR2-UX8xqCFjjHxpD2/preview" target="_blank">Linux Command Line</a></li>
+      <li><a href="https://drive.google.com/file/d/1uU0nATK5BrB5eJGMCx3nTY-VDiZe84X6/preview" target="_blank">Linux Users and Groups</a></li>
+      <li><a href="https://drive.google.com/file/d/1mjuvdFTye7DMnE6PcvpDKSpEQaPSGxtR/preview" target="_blank">Editing Files in Linux</a></li>
+      <li><a href="https://drive.google.com/file/d/1pff0dfLWSEshLogmV8c1Q0rmBM7jGTBn/preview" target="_blank">File System</a></li>
+      <li><a href="https://drive.google.com/file/d/1pn5_t_VSzTuiQTCzsdrx2uegxi295MkS/preview" target="_blank">Working with Files</a></li>
+      <li><a href="https://drive.google.com/file/d/1G95euW_DAtT19oeRzDRd-DJeYxONNdvP/preview" target="_blank">File Permissions</a></li>
+      <li><a href="https://drive.google.com/file/d/1qW6WzG1GhYvMtiJ5jMEHp63UgL_eRQPq/preview" target="_blank">Commands</a></li>
+      <li><a href="https://drive.google.com/file/d/1lQc0kW-ycmZHlTun1RL1fcnsh-lrq84s/preview" target="_blank">Processes</a></li>
+      <li><a href="https://drive.google.com/file/d/1VlR9dYVWGxeJWZFRjPbHj_lqjQgGyG3-/preview" target="_blank">Services</a></li>
+      <li><a href="https://drive.google.com/file/d/1ELXtk649NNBfWy4WPcR-NHFn--Gfe6vA/preview" target="_blank">Bash Shell</a></li>
+      <li><a href="https://drive.google.com/file/d/1yHqjWDDm0z-txg4a7tYCj94KK7F3gKMl/preview" target="_blank">Bash Shell Scripting</a></li>
+      <li><a href="https://drive.google.com/file/d/1MKMaN7xkcGSMQWepqb50H8kqEQSV9JhY/preview" target="_blank">Software Management</a></li>
+      <li><a href="https://drive.google.com/file/d/1LJcSi4v1wg0V3OKUNNAtpOq5Ejmsn3s2/preview" target="_blank">Log Files</a></li>
+
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu3">
+      <li><a href="https://drive.google.com/file/d/1TXDtIspBXjT3GNkkIwbE0-mfZPj7d2re/preview" target="_blank">Intro to Networking</a></li>
+      <li><a href="https://drive.google.com/file/d/1tm9uyZk4pGg0MrIO499h29LDwXUJbrVY/preview" target="_blank">Networking Concepts</a></li>
+      <li><a href="https://drive.google.com/file/d/1y5SODwimQhygk0OxkdKLrawPJMi_xJ_p/preview" target="_blank">Internet Protocol [IP]</a></li>
+      <li><a href="https://drive.google.com/file/d/1DWsfCFMj2kLKmdO-qfVdhP7Td9f_Jkp2/preview" target="_blank">Networking in AWS</a></li>
+      <li><a href="https://drive.google.com/file/d/1JlDg8ad15aFPG-2fqOo1MNS-_VpFhX8I/preview" target="_blank">IP Subnetting</a></li>
+      <li><a href="https://drive.google.com/file/d/1Xufv6gi3VhR-5RsnWzLc6ioJ-aO5vYkI/preview" target="_blank">Networking Protocols</a></li>
+      <li><a href="https://drive.google.com/file/d/1kkZlnIoLG_EAO5UpKg4sWpEuxMDVKuFs/preview" target="_blank">Networking Technologies</a></li>
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu4">
+      <li><a href="https://drive.google.com/file/d/1C7wE60cZwvJQ5bu9BUO3fqGtKUzl6Jbv/preview" target="_blank">Intro to Security</a></li>
+      <li><a href="https://drive.google.com/file/d/1YeLdH44-LSaWO1VdC1wW2-r9fbyB4wfJ/preview" target="_blank">Acceptable Use Policy</a></li>
+      <li><a href="https://drive.google.com/file/d/191pToHKBacvMORGJwi1WiJ8HEfZJgta6/preview" target="_blank">Security Life Cycle</a></li>
+      <li><a href="https://drive.google.com/file/d/18ertcibLCGIm4I2hgbxDy2KbgoDM5xjY/preview" target="_blank">Network Hardening</a></li>
+      <li><a href="https://drive.google.com/file/d/1wXLiw3on0Gkn8-6H49iAh04J5ENjNq9L/preview" target="_blank">System Hardening</a></li>
+      <li><a href="https://drive.google.com/file/d/1Tz_N6ST-1vFd4TH0G96RaL3ofWROwJuQ/preview" target="_blank">Data Security</a></li>
+      <li><a href="https://drive.google.com/file/d/1IBHj6rhC8A0ofgGjNC-LVIc-Zhean45o/preview" target="_blank">Public Key Infrastructure</a></li>
+      <li><a href="https://drive.google.com/file/d/12fNNk9TC1jo8yInTzq_tsHtDj-yMr-yj/preview" target="_blank">Identity Management</a></li>
+      <li><a href="https://drive.google.com/file/d/1AWxIq33j8munIqhR4RLpaDBqC-lcXa_4/preview" target="_blank">AWS IAM</a></li>
+      <li><a href="https://drive.google.com/file/d/1JVqaGfHWHoVjBg_mOudr4CCou6mp0MXB/preview" target="_blank">Detection</a></li>
+      <li><a href="https://drive.google.com/file/d/10qZna_f4uI_y35PwxdFOmjVsxy-Cgw85/preview" target="_blank">AWS CloudTrail</a></li>
+      <li><a href="https://drive.google.com/file/d/1JuNMX0bMsS_9ySakkssYPvRny0azS46c/preview" target="_blank">AWS Config</a></li>
+      <li><a href="https://drive.google.com/file/d/1-ZHfaRlZ4EIVIaVkxH8HEVCbv-Nvf1uv/preview" target="_blank">Response</a></li>
+      <li><a href="https://drive.google.com/file/d/1U0dW0uLxKA7-XBDULXHoTF7BjWeOsJa6/preview" target="_blank">Analysis</a></li>
+      <li><a href="https://drive.google.com/file/d/1vrxG6trcLatf6l9a45776Ho4AtlPht-a/preview" target="_blank">AWS Trusted Advisor</a></li>
+      <li><a href="https://drive.google.com/file/d/1qfhes-XjpxGHWz3PM5QkqGXNbC6neC9Z/preview" target="_blank">Security Best Practices</a></li>
+      <li><a href="https://drive.google.com/file/d/1jWG7ebSTfPMbg7uv6djEQHdfkeYSMQIv/preview" target="_blank">AWS Compliance Program</a></li>
+      <li><a href="https://drive.google.com/file/d/1inHBrVZoBy98McFBQFYVA7V_9VzMBV3y/preview" target="_blank">AWS Security Resources</a></li>
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu5">
+      <li><a href="https://drive.google.com/file/d/1QQB1AyB9nelhVEvR7-ee4UtDOjhJxEm4/preview" target="_blank">Intro to Programming</a></li>
+      <li><a href="https://drive.google.com/file/d/1Dq93_FvK6_8SP0JsnqqTNBsSdOJvFs4L/preview" target="_blank">Intro to Python</a></li>
+      <li><a href="https://drive.google.com/file/d/17mekvn2ZxOHQYvx34awh-kxN33VCIIeA/preview" target="_blank">Python Basics</a></li>
+      <li><a href="https://drive.google.com/file/d/1KueqUGUY1m0fTxBO1jSf4ppMUZVPbGRN/preview" target="_blank">Flow Control</a></li>
+      <li><a href="https://drive.google.com/file/d/19ScKM3btWh-qibsY18BcA2Incf8WGC8P/preview" target="_blank">Functions</a></li>
+      <li><a href="https://drive.google.com/file/d/1Q2Ge8na5nQMgoCwKSsOEWd1NbS5dS-15/preview" target="_blank">Modules and Libraries</a></li>
+      <li><a href="https://drive.google.com/file/d/1WA95rxrQ70uqAIqd6gaolxhS8LkykncD/preview" target="_blank">System Administration</a></li>
+      <li><a href="https://drive.google.com/file/d/1eV4SiR_geIDqQqMC9AVYDlnBd2mpq5Tc/preview" target="_blank">Debugging and Testing</a></li>
+      <li><a href="https://drive.google.com/file/d/1UlOtbSkWLriNp_RDK-Xt2rzgpvqEMab_/preview" target="_blank">DevOps and CI</a></li>
+      <li><a href="https://drive.google.com/file/d/1DMtEo7jT3zVFZ4aNmGIXxSkZ48iNBfp5/preview" target="_blank">Configuration Management</a></li>
+      <li><a href="https://drive.google.com/file/d/1I3-NQ7xgKkck_di3LnE4074tZJP7889B/preview" target="_blank">Fact Finding</a></li>
+
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu6">
+      <li><a href="https://drive.google.com/file/d/1v1ncqFSFIq5Fq0gZ3XRAa5z8LRhR9ZuO/preview" target="_blank">Intro to Databases</a></li>
+      <li><a href="https://drive.google.com/file/d/1br5qhnuwUrdyuMwt-fk1r9fabUpwhB3L/preview" target="_blank">Data Interaction & transaction</a></li>
+      <li><a href="https://drive.google.com/file/d/1O2yWxOPJ2Cb3RpiMqr9jTbFoRf4a-Ny7/preview" target="_blank">Create Tables & Data Types</a></li>
+      <li><a href="https://drive.google.com/file/d/1skYfel1bvyR-BNR1JFRXIYxbBKcyRURA/preview" target="_blank">Inserting Data</a></li>
+      <li><a href="https://drive.google.com/file/d/1MdSo7jemZGwK3Sjwe7EMfR_l2rvqq0cM/preview" target="_blank">Selecting Data</a></li>
+      <li><a href="https://drive.google.com/file/d/1W-Q_LxKKfv_mYysS3Txaq0Bf0pyRlwNT/preview" target="_blank">Conditional Search</a></li>
+      <li><a href="https://drive.google.com/file/d/1I5dVXl3PoLHKzix7u2oFN3oGVaFHz2J2/preview" target="_blank">Working with Functions </a></li>
+      <li><a href="https://drive.google.com/file/d/1Uyc0uEyK3aJy_4LC_rw-0Ywgzw6J7klJ/preview" target="_blank">Organizing Data</a></li>
+      <li><a href="https://drive.google.com/file/d/1mCQnt5yzxikcB0U_07yXbHihoarUDqN1/preview" target="_blank">Retrieving Data</a></li>
+      <li><a href="https://drive.google.com/file/d/1JIg4kDqef6xBZ99B32fTqFGU_8pxwUSl/preview" target="_blank">AWS RDS</a></li>
+      <li><a href="https://drive.google.com/file/d/1jvIdDuJdqn0RZCzhhIKSPTkUqApsfFnb/preview" target="_blank">AWS DynamoDB</a></li>
+      <li><a href="https://drive.google.com/file/d/1GJJ7FIAHjgn7GY6p7DMpr08KviXAV7Wh/preview" target="_blank">Fact Finding</a></li>
+
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu7">
+      <li><a href="https://drive.google.com/file/d/1Y-EUoFhvCfDuPH3AXgw4pY4vsw6PtN2p/preview" target="_blank">AWS Architecture Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1yxh2wJPaeBECUIMngC1KiGwWuqV060-u/preview" target="_blank">AWS Cloud Adoption Framework</a></li>
+      <li><a href="https://drive.google.com/file/d/1Sojk3ikxexuFqmjGJvYI2kZtm0o7pi_z/preview" target="_blank">AWS Well-Architect Framework</a></li>
+      <li><a href="https://drive.google.com/file/d/1tQxYGBB01nPIxShjOq35R6Wvnu-4h3sl/preview" target="_blank">AWS Well-Architected Principles</a></li>
+      <li><a href="https://drive.google.com/file/d/1hq5SUVl74aI-MEWe2i3pAmjmXCcfh86w/preview" target="_blank">Reliability and High Availability</a></li>
+      <li><a href="https://drive.google.com/file/d/1cksk7KYgu2vWlTdjnjYCvSdKd7u2Eii5/preview" target="_blank">Transitioning a Datacenter To Cloud</a></li>
+      <li><a href="https://drive.google.com/file/d/1T8pE8sz-_w5Y55JEbm5VaFmlSMMoh2d7/preview" target="_blank">Fact Finding</a></li>
+
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu8">
+      <li><a href="https://drive.google.com/file/d/12tvhPc6qMtv-r_GegpsgV3dExOuTCgsK/preview" target="_blank">System Operations Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/10mEYMpC_HIoHBFQj7Pw-3faSz7AudtAq/preview" target="_blank">System Operations on AWS</a></li>
+      <li><a href="https://drive.google.com/file/d/1BQPX793GfXtKk-cwUsPch7yDFJk161xA/preview" target="_blank">Troubleshooting</a></li>
+      <li><a href="https://drive.google.com/file/d/1BpqXaMYvWNSlmOUQK32jQjYoPwwL6mSu/preview" target="_blank">KB Spreadsheet</a></li>
+      <li><a href="https://drive.google.com/file/d/1ivIMIO9iT6Nw5B_oh3kGquwTO6TNAfIe/preview" target="_blank">IAM Review</a></li>
+      <li><a href="https://drive.google.com/file/d/14JCXovRdazbtt0dBuVaBGtslWgA3A2uZ/preview" target="_blank">AWS CLI</a></li>
+      <li><a href="https://drive.google.com/file/d/1qOmuWJeYi8EHB_u6EyCtSPYPreZ7akIt/preview" target="_blank">Install & practice</a></li>
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu9">
+      <li><a href="https://drive.google.com/file/d/1ma59yOoeknVUDNdBSqk_JDAlLwLktuvL/preview" target="_blank">Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1w3gbLIEKzKMH6eE7J7Yw71fqfFTKdQuM/preview" target="_blank">AWS Systems Manager</a></li>
+      <li><a href="https://drive.google.com/file/d/1vY63y9xnyNRKDCgCcFiS_hs_jODyOQBL/preview" target="_blank">Administration and Dev Tools</a></li>
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu10">
+      <li><a href="https://drive.google.com/file/d/1P-M0D4GPRFvBJ9qGCLApzfe69jfRgmcV/preview" target="_blank">Servers Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1Or862iJd6SeSVajEW7GLE8MGdF81D1P3/preview" target="_blank">hosting Static Website On S3</a></li>
+      <li><a href="https://drive.google.com/file/d/15eXu7ZawFFqbAWFYPEoPVncvBw_h-5QH/preview" target="_blank">Creating a Website on S3</a></li>
+      <li><a href="https://drive.google.com/file/d/1Id7bURrVPhl_0qyUKlBKz54h9jfnE9n7/preview" target="_blank">Computing on AWS</a></li>
+      <li><a href="https://drive.google.com/file/d/1BpILui4tSpJBOBbGoZnPTaWNTzJaDUnL/preview" target="_blank">Managing AWS Instances</a></li>
+      <li><a href="https://drive.google.com/file/d/17BPhYyelOSuSPwS6hoMDreuEb50AZsCS/preview" target="_blank">AWS Elastic BeanStalk</a></li>
+      <li><a href="https://drive.google.com/file/d/1T5BkV9W-v7tJnyRSmMyGYpCzR0aZ0lg5/preview" target="_blank">Troubleshooting</a></li>
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu11">
+      <li><a href="https://drive.google.com/file/d/1OzX7XO62QoTpLppBmHhzylRrKmFTXDRC/preview" target="_blank">Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1GyE-vjO9xQZDdJv7cLFL8HFYnAZFTZzK/preview" target="_blank">Elastic Load Balancing</a></li>
+      <li><a href="https://drive.google.com/file/d/1A-Lh7hVEVrUvwYrSx7NjZhobBCC4R4Ad/preview" target="_blank">Load balancers and Listeners</a></li>
+      <li><a href="https://drive.google.com/file/d/11MtqhzeAovFaFxyH-XLpHhgPtlwj32CW/preview" target="_blank">EC2 Auto Scaling</a></li>
+      <li><a href="https://drive.google.com/file/d/19PyyX57nAkDqTt_dZrMzdwJzFB55er6M/preview" target="_blank">Auto Scale Prediction Challange</a></li>
+      <li><a href="https://drive.google.com/file/d/1UeusAI0ffAsph5d_oauFhaNyYQmEX7Nf/preview" target="_blank">AWS Route 53</a></li>
+      <li><a href="https://drive.google.com/file/d/1aHoHZdD8eTIUgUXGa5f1Ugh684vXb79L/preview" target="_blank">AWS CloudFront</a></li>
+      <li><a href="https://drive.google.com/file/d/1tHG1JNBeM_dwdf04V4iPunUPriEjr6SM/preview" target="_blank">Route 53 failover Routing</a></li>
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu12">
+      <li><a href="https://drive.google.com/file/d/15dRmGHMHGqf7aOoZNP3FCY18-cs6mpcq/preview" target="_blank">Fact Finding</a></li>
+      <li><a href="https://drive.google.com/file/d/1wr_7Q7zxnzthmGmK6QxdbuZkkOJb-HoL/preview" target="_blank">Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1ZDJ9q1RL16ZYFHzBQN3NLW9BG0orj0jo/preview" target="_blank">AWS lambda</a></li>
+      <li><a href="https://drive.google.com/file/d/1MbHZw9VKiEhNIhYsJ5-IPgXVlBeS5vK-/preview" target="_blank">APIs and REST</a></li>
+      <li><a href="https://drive.google.com/file/d/18HcVC_YjPTYDt6X7TX20t5G58K4CrRPQ/preview" target="_blank">AWS API Gateway</a></li>
+      <li><a href="https://drive.google.com/file/d/1U_FjVFCA1x152Bt3XLjsmndlBr-7Rqet/preview" target="_blank">AWS Step Functions</a></li>
+      <li><a href="https://drive.google.com/file/d/1I_rIiwHieUqJqP_LA7KtrMFcLdA9Pt_X/preview" target="_blank">Containers on AWS</a></li>
+
+    </ul>
+    <ul class="submenu" id="topicsSubmenu13">
+      <li><a href="https://drive.google.com/file/d/1Dyyg2kR8l5u5MTCVcK75RvSXk8O819uG/preview" target="_blank">Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1RsfpP7ocqtOF2SnCDyv6fPJZPvlVMT-v/preview" target="_blank">Intro to DB on AWS </a></li>
+      <li><a href="https://drive.google.com/file/d/1MvWOm7vgzUO_kfMjNVjbm52sFUpXDSRb/preview" target="_blank">AWS RedShift</a></li>
+      <li><a href="https://drive.google.com/file/d/1q6tKeMfw9BiyECDCmCg-xGkpHUwW8IVl/preview" target="_blank">AWS Aurora</a></li>
+      <li><a href="https://drive.google.com/file/d/1AV0v7WZ7_VhgR7inwhtZp4LBygXV1b70/preview" target="_blank">AWS Database Migration</a></li>
+      <li><a href="https://drive.google.com/file/d/1PblBRm40jJVmt44TPa3la-X58maDSG80/preview" target="_blank">Migrating to AWS RDS</a></li>
+    </ul>
+
+    <ul class="submenu" id="topicsSubmenu14">
+      <li><a href="https://drive.google.com/file/d/1Z9L25yuyjN8oMsxAFvdDHaJKKwz4srKy/preview" target="_blank">Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1uBHpMYQEogtFnlu8b-RVukd5sle_tUuY/preview" target="_blank">AWS VPC</a></li>
+      <li><a href="https://drive.google.com/file/d/1uujVS5YigcWl97RAF_dvvqsM8-X5VrYy/preview" target="_blank">VPC Connectivity Options</a></li>
+      <li><a href="https://drive.google.com/file/d/1YkorFmhdAXG9xVioBnbn6OdJLHTbCcMZ/preview" target="_blank">Security and Troubleshooting</a></li>
+      <li><a href="https://drive.google.com/file/d/193l4YeRLcx_qimoax1IiBvAQsmUSGRca/preview" target="_blank">Trouble Shooting a VPC</a></li>
+    </ul>
+    <ul class="submenu" id="topicsSubmenu15">
+      <li><a href="https://drive.google.com/file/d/1YJVQtdrZWO_4BKUAnWMAbljFWSt-LAqm/preview" target="_blank">Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/16Yrf2SKENYnDzwJREWBjyW9uMeUIs0oO/preview" target="_blank">Cloud Storage Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1q83Z2VlWMcbTNPF3MpUcvaN8h81xaf0T/preview" target="_blank">AWS EBS</a></li>
+      <li><a href="https://drive.google.com/file/d/10nrGHhV0mz3RVDEOjiYDK9-sFMwkMUK3/preview" target="_blank">Instance Store</a></li>
+      <li><a href="https://drive.google.com/file/d/1G8LsFc8cR_Z3-Og5PVsXl4eFNfMqchP7/preview" target="_blank">AWS EFS</a></li>
+      <li><a href="https://drive.google.com/file/d/1_V6omBpEQ1AQKK67jir7FdvID17SiTND/preview" target="_blank">Storgae with S3</a></li>
+      <li><a href="https://drive.google.com/file/d/1Wc_elI5fxr4zqJDGGv7DVBHAR8l1DBIt/preview" target="_blank">AWS S3 Glacier</a></li>
+      <li><a href="https://drive.google.com/file/d/1ckym0_0apZbsQLUe_IlSDHjbNA26vIOH/preview" target="_blank">AWS Storgae Gateway</a></li>
+      <li><a href="https://drive.google.com/file/d/10TInoa3z2E-52IVYCScWrgekiEBCI4iQ/preview" target="_blank">Working with AWS S3</a></li>
+      <li><a href="https://drive.google.com/file/d/1Uf4Lm9-7e_gdOrGYv7h4rPkVkkrN1QjC/preview" target="_blank">Transfer and Migration</a></li>
+    </ul>
+
+
+      <ul class="submenu" id="topicsSubmenu16">
+      <li><a href="https://drive.google.com/file/d/18H_lKgpPhzYIZnZMrUb8KSQwP_J3Zxr8/preview" target="_blank">Monitoring & Security Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1J0FiNLSXIemdA08SKlGDZFSBVXj9kGiB/preview" target="_blank">Amazon Cloud Watch</a></li>
+      <li><a href="https://drive.google.com/file/d/1LI5XhV78KUgPgknanNCc5twMGw-B_g6g/preview" target="_blank">DeepDive Cloud Watch</a></li>
+      <li><a href="https://drive.google.com/file/d/1lrqGQsewQFmuNu1JWm8g5Eb7P-hsGIyY/preview" target="_blank">AWS CloudTrail</a></li>
+      <li><a href="https://drive.google.com/file/d/1osvq2lkZ_Th4ydX_vej_BwFykwNfU8Pf/preview" target="_blank">AWS Service Integration with Athena</a></li>
+      <li><a href="https://drive.google.com/file/d/1G5CTKEnuuDcnTVZ2gzxiPh4sUTcEABdi/preview" target="_blank">Manage Resource Consumtion Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1lzuMhRrZcJNFHn20C74AIEsMAvkZ4AMa/preview" target="_blank">AWS Organizations</a></li>
+      <li><a href="https://drive.google.com/file/d/15GpVnxQ-SrLuEYarQt4T0t8TcOCSpHDL/preview" target="_blank">Tagging</a></li>
+      <li><a href="https://drive.google.com/file/d/1z48bDl9aqoKeFeMxI4JaL-zs_IZGgbmG/preview" target="_blank">AWS Cost Management</a></li>
+      <li><a href="https://drive.google.com/file/d/1QxSeBxD6AABRsOXc8BoFfVT4bUjOIL2H/preview" target="_blank">AWS Support Services</a></li>
+      <li><a href="https://drive.google.com/file/d/1O8HjSSQHFcFYowoLsHF-oC92xq94zMQp/preview" target="_blank">Fact Finding</a></li>
+      <li><a href="https://drive.google.com/file/d/117MCbA4vNDK0mBbjB1uvD4m8RlPa99Md/preview" target="_blank">Automated Repeatable Deployments Overview</a></li>
+      <li><a href="https://drive.google.com/file/d/1wbW0BA8_X8b3Wbbde6eUO0y8Fm35dkNU/preview" target="_blank">Automated Repeatable Deployments</a></li>
+      <li><a href="https://drive.google.com/file/d/17Qbxc8c1BAdyLkJYH2MY8612X-MrL52e/preview" target="_blank">AMI Building Startegy</a></li>
+      <li><a href="https://drive.google.com/file/d/16hCrgBz90vlVtLWVsa5mAibjeW3DW_2C/preview" target="_blank">AWS EC2 Launch Templates</a></li>
+      <li><a href="https://drive.google.com/file/d/1THvJARSqJKbnf79OPJINwX0YRR7Cn0Dv/preview" target="_blank">Infrastructure as Code</a></li>
+      <li><a href="https://drive.google.com/file/d/1SRirxSCwqEco6rxk75K6SEMljHdbsrIJ/preview" target="_blank">Intro to JSON & YAML</a></li>
+      <li><a href="https://drive.google.com/file/d/1kpUb770dopb8Qw_LszW4pptcr4Gx7txX/preview" target="_blank">AWS Cloud Formation</a></li>
+      <li><a href="https://drive.google.com/file/d/1BmM-iNsclrAS3MwjrvZPgcy63AiCv_g6/preview" target="_blank">Troubleshooting Deployments</a></li>
+      <li><a href="https://drive.google.com/file/d/1d_U0joCI3rqLM87TQt3k5G-WH5xtB4YU/preview" target="_blank">Fact Finding</a></li>
+    </ul>
+
+    <ul class="dropdown" id="quizDropdown">
+      <li onclick="showSubmenu('quizSubmenu1')">SET 1</li>
+    </ul>
+
+    <ul class="submenu" id="quizSubmenu1">
+      <li><a href="/restart/quiz.html" target="_blank">SET 1.0 </a></li>
+    </ul>
+
+    <ul class="dropdown" id="labsDropdown">
+      <li onclick="showSubmenu('labsSubmenu1')">Lab 1</li>
+      <li onclick="showSubmenu('labsSubmenu2')">Lab 2</li>
+      <li onclick="showSubmenu('labsSubmenu3')">Lab 3</li>
+    </ul>
+
+  
+    <ul class="submenu" id="labsSubmenu1">
+      <li><a href="https://example.com/lab1.0" target="_blank">Lab 1.0</a></li>
+      <li><a href="https://example.com/lab1.1" target="_blank">Lab 1.1</a></li>
+      <li><a href="https://example.com/lab1.2" target="_blank">Lab 1.2</a></li>
+    </ul>
+
+    <ul class="submenu" id="labsSubmenu2">
+      <li><a href="https://example.com/lab2.0" target="_blank">Lab 2.0 Link</a></li>
+      <li><a href="https://example.com/lab2.1" target="_blank">Lab 2.1 Link</a></li>
+      <li><a href="https://example.com/lab2.2" target="_blank">Lab 2.2 Link</a></li>
+    </ul>
+
+    <ul class="submenu" id="labsSubmenu3">
+      <li><a href="https://example.com/lab3.0" target="_blank">Lab 3.0 Link</a></li>
+      <li><a href="https://example.com/lab3.1" target="_blank">Lab 3.1 Link</a></li>
+      <li><a href="https://example.com/lab3.2" target="_blank">Lab 3.2 Link</a></li>
+    </ul>
+
+  </div>
+
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+<!-- Main Container with Course Description -->
+<div class="container">
+  <div class="logo">
+    AWS<span>→</span> re/Start
+  </div>
+  <div class="subheading">AWS CLOUD & IT FUNDAMENTALS TRAINING</div>
+  <div class="title">
+    Launch a career in technology with AWS re/Start
+  </div>
+  <div class="description">
+    Receive foundational IT, networking, security, database, automation, and core AWS Cloud skills, 
+    and get trained for roles such as technical support specialist, systems administrator, 
+    cloud automation lead, up to infrastructure engineer and more.
+  </div>
+  <div a href ="/access.html" class="button" onclick="access()">
+    <button> START NOW </button>
+  </div>
+</div>
+
+
+
+<!-- Container 2: Course Details -->
+<div class="container-2">
+  <h2> Details </h2>
+  <div class="details-container">
+    <div class="detail-box">
+      <span class="label">Length</span>
+      <strong class="value">12 weeks</strong>
+    </div>
+    <div class="detail-box">
+      <span class="label">Days</span>
+      <strong class="value">Monday-Friday</strong>
+    </div>
+    <div class="detail-box">
+      <span class="label">Hours</span>
+      <strong class="value">10am-6pm</strong>
+    </div>
+    <div class="detail-box">
+      <span class="label">Cost</span>
+      <strong class="value">Free</strong>
+    </div>
+    <div class="detail-box">
+      <span class="label">Mode</span>
+      <strong class="value">Online</strong>
+    </div>
+    <div class="detail-box">
+      <span class="label">Age</span>
+      <strong class="value">21-25</strong>
+    </div>
+  </div>
+</div>
+
+<!-- Container 3: Possible Job Roles -->
+<div class="container-3">
+  <h2>Possible Job Roles</h2>
+  <div class="job-roles">
+    <div class="job-role">
+      <h3>Associate Cloud Systems Developer</h3>
+    </div>
+    <div class="job-role">
+      <h3>Software Developer</h3>
+    </div>
+    <div class="job-role">
+      <h3>Cloud Engineer</h3>
+    </div>
+    <div class="job-role">
+      <h3>Jr. Software Developer</h3>
+    </div>
+    <div class="job-role">
+      <h3>Associate Developer</h3>
+    </div>
+    <div class="job-role">
+      <h3>System Engineer</h3>
+    </div>
+    <div class="job-role">
+      <h3>System Analyst</h3>
+    </div>
+    <div class="job-role">
+      <h3>Technical Support Engineer</h3>
+    </div>
+    <div class="job-role">
+      <h3>Associate Engineer</h3>
+    </div>
+  </div>
+</div>
+<div class="alumni-section">
+  <h2>Our Alumni</h2>
+  <div class="alumni-slider-container">
+    <div class="alumni-slider">
+      <div class="alumni-slide"><img src="images/aws.png" alt="AWS"></div>
+      <div class="alumni-slide"><img src="images/cognizant.png" alt="Cognizant"></div>
+      <div class="alumni-slide"><img src="images/tcs.png" alt="TCS"></div>
+      <div class="alumni-slide"><img src="images/techmahindra.png" alt="Tech Mahindra"></div>
+      <div class="alumni-slide"><img src="images/deloitte.png" alt="Deloitte"></div>
+      <div class="alumni-slide"><img src="images/infosys.png" alt="Infosys"></div>
+      <div class="alumni-slide"><img src="images/cgi.png" alt="CGI"></div>
+      <div class="alumni-slide"><img src="images/accenture.png" alt="Accenture"></div>
+      <!-- Duplicate the slides for seamless looping -->
+      <div class="alumni-slide"><img src="images/aws.png" alt="AWS"></div>
+      <div class="alumni-slide"><img src="images/cognizant.png" alt="Cognizant"></div>
+      <div class="alumni-slide"><img src="images/tcs.png" alt="TCS"></div>
+      <div class="alumni-slide"><img src="images/techmahindra.png" alt="Tech Mahindra"></div>
+      <div class="alumni-slide"><img src="images/delottie.png" alt="Deloitte"></div>
+      <div class="alumni-slide"><img src="images/infosys.png" alt="Infosys"></div>
+      <div class="alumni-slide"><img src="images/cgi.png" alt="CGI"></div>
+      <div class="alumni-slide"><img src="images/accenture.png" alt="Accenture"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-content">
+    <!-- Left Side: Developer Image, Info, and Social Media Icons -->
+    <div class="left-side">
+      <img class="developer-image" src="images/DSC_01590.JPG" alt="Developer Image">
+      <div class="developer-info">
+        <h4> Vivek S </h4>
+        <p> Software Developer</p>
+        <p>vivekdev146@gmail.com</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/vivek_speaks" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/s-vivek-72414227a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/vivekabhimanyu?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle Section: Buy Me a Tea -->
+    <div class="middle-section">
+      <h1>Did it helped you?</h1>
+      <div class="image-section">
+        <img src="images/tea.png" alt="Tea Glass" class="tea-image">
+      </div>
+      <button class="donate-button" onclick="showQRCode()">Donate for Tea</button>
+    </div>
+
+    <!-- Right Side: Content Partners List -->
+    <div class="right-side">
+      <h2>Content Partners</h2>
+      <ul class="partners-list">
+        <li><a href="https://aws.amazon.com/training/restart/"><button>Amazon Web Services</button></a></li>
+        <li><a href="https://india.generation.org/programs/aws-restart/"><button>Generation India</button></a></li>
+        <li><a href="https://www.vinsys.com/blog/aws-re-start-transforming-professionals-career-in-it-industry"><button>Vinsys</button></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer Bottom Section -->
+  <div class="footer-bottom">
+    <p>&copy; 2024 AWS re/Start. All rights reserved.</p>
+    <p>Contact us: info@awsrestart.com</p>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="teaPopup">
+    <div class="popup-content">
+      <img src="images/payme.png" alt="Thank You" class="popup-image">
+      <p>Thank you for your donation!</p>
+    </div>
+  </div>
+
+  <!-- Embedded CSS -->
+  <style>
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+
+    /* Left Side (Developer Info & Social Icons) */
+    .left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .developer-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .developer-info {
+      margin-top: 10px;
+    }
+
+    .developer-info h4 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .developer-info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .social-icons i {
+      font-size: 30px;
+      color: #fff;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons i:hover {
+      color: #f3a733; /* Orange hover color */
+      transform: scale(1.2);
+    }
+
+    /* Middle Section (Buy Me a Tea) */
+    .middle-section {
+      text-align: center;
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .middle-section h1 {
+      font-size: 36px;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .image-section h2 {
+      font-size: 24px;
+      color: #1e3a8a; /* Navy blue for the heading */
+      margin-bottom: 15px;
+    }
+
+    .tea-image {
+      width: 150px;
+      height: 150px;
+      border-radius:55px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .tea-image:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .donate-button {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .donate-button:hover {
+      background-color: #f3a733;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    /* Right Side (Content Partners List) */
+    .right-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .right-side h2 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      color: #ff9f00;
+    }
+
+    .partners-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .partners-list li {
+      margin: 5px 0;
+    }
+
+    .partners-list li button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      text-align: left;
+      cursor: pointer;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+
+    .partners-list li button:hover {
+      color: #f3a733;
+    }
+
+    /* Footer Bottom Section */
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .footer-bottom p {
+      margin: 5px 0;
+    }
+
+    /* Popup styles */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .popup-image {
+      width: 100px;  /* You can adjust the size */
+      height: 100px; /* You can adjust the size */ /* This makes the image round */
+    }
+    .popup-image:hover {
+      width: 200px;  /* You can adjust the size */
+      height: 200px; /* You can adjust the size */
+ /* This makes the image round */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .popup.show {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .right-side {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .middle-section {
+        margin-top: 20px; /* Move the tea section to the top */
+      }
+    }
+  </style>
+
+  <!-- Embedded JavaScript -->
+  <script>
+    function showQRCode() {
+      var popup = document.getElementById("teaPopup");
+
+      // Show the popup
+      popup.style.display = "block";
+      popup.classList.add("show");
+
+      // Hide the popup after 5 seconds
+      setTimeout(function() {
+        popup.style.display = "none";
+        popup.classList.remove("show"); // Remove animation class
+      }, 10000); // 10000 milliseconds = 10 seconds
+    }
+  </script>
+</footer>
+
+
+
+
+
+</html>
